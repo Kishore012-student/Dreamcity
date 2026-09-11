@@ -23,8 +23,6 @@
 
     backdrop-filter: blur(30px);
 
-    -webkit-backdrop-filter: blur(30px);
-
     border: 1px solid rgba(255, 255, 255, 0.35);
 
     box-shadow:
@@ -62,9 +60,9 @@
 
 .search-icon {
 
-    font-size: 18px;
+    font-size: 20px;
 
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .searchbar input {
@@ -81,13 +79,13 @@
 
     font-size: 17px;
 
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 
 .searchbar input::placeholder {
 
-    color: rgba(255, 255, 255, 0.90);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .searchbyselect {
@@ -119,7 +117,7 @@
 
     box-shadow: none;
 
-    color: white;
+    color: rgb(0, 0, 0);
 
     text-align: left;
 
@@ -133,7 +131,7 @@
 #plot-dropdown:hover,
 #budget-dropdown:hover {
 
-    color: #f1f1f1;
+    color: #444444;
 
     background: transparent;
 }
@@ -147,7 +145,7 @@
 
     background: transparent;
 
-    color: white;
+    color: rgb(79, 79, 79);
 }
 
 .search-btn {
