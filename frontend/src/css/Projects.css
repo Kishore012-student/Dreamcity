@@ -1,0 +1,324 @@
+.hero-section1 {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.hero-section1 .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+.hero-content1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 15px 50px;
+    z-index: 2;
+}
+
+.hero-content1 h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-content1 p {
+    color: white;
+    width: 500px;
+    max-width: 100%;
+    margin: 0;
+}
+
+.hero-overlay1 {
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(50, 50, 50, 0.75),
+        rgba(117, 117, 117, 0.4),
+        rgba(220, 220, 220, 0.05)
+    );
+
+    z-index: 1;
+}
+
+.plot-sort1 {
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.sort-button1 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 25px;
+    border: 1.5px solid #0078db;
+    background: white;
+}
+
+.sort-button1:hover {
+    background-color: #0078db;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+.project-section {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 30px 50px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+
+.filters {
+    width: 280px;
+    min-width: 280px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    padding: 10px 0 20px;
+
+    align-self: flex-start;
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.fil-reset {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filimg {
+    width: 16px;
+}
+
+.fil {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.fil p {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.reset-btn {
+    padding: 15px;
+}
+
+.reset-btn button {
+    background-color: #0078db;
+    padding: 7px 15px;
+    border: none;
+    color: white;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-btn button:hover {
+    background-color: #0061b0;
+    transform: translateY(-2px);
+}
+
+.location,
+.location1 {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.location {
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loc1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.loc1 input[type='checkbox'] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.loc1 label {
+    margin: 0;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.apply-filter {
+    width: calc(100% - 40px);
+    margin: 10px 20px 0;
+
+    background-color: #0078db;
+    color: white;
+
+    border-radius: 15px;
+
+    padding: 10px 0;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.apply-filter:hover {
+    background-color: #0061b0;
+    transform: translateY(-2px);
+}
+
+.project-card2 {
+    flex: 1;
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+
+    gap: 20px;
+
+    align-items: start;
+}
+
+@media (max-width: 992px) {
+
+    .project-section {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .filters {
+        width: 240px;
+        min-width: 240px;
+    }
+
+    .hero-content1 {
+        padding: 15px 30px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .hero-section1 {
+        height: 280px;
+        border-radius: 20px;
+    }
+
+    .hero-section1 .hero-img,
+    .hero-overlay1 {
+        border-radius: 20px;
+    }
+
+    .hero-content1 {
+        padding: 20px;
+        top: 50%;
+    }
+
+    .hero-content1 h1 {
+        font-size: 28px;
+    }
+
+    .hero-content1 p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .plot-sort1 {
+        gap: 10px;
+        padding: 20px 10px;
+    }
+
+    .sort-button1 {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    .project-section {
+        flex-direction: column;
+        padding: 20px 15px 40px;
+    }
+
+    .filters {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .project-card2 {
+        width: 100%;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .project-card2 {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content1 h1 {
+        font-size: 24px;
+    }
+
+    .plot-sort1 {
+        justify-content: flex-start;
+    }
+}

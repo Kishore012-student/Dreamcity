@@ -1,0 +1,347 @@
+.project-card {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: rgba(169, 169, 169, 0.15);
+
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+.project-details1 {
+    flex: 1;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.project-title {
+    margin: 0;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    letter-spacing: -0.5px;
+
+    color: #222;
+}
+
+.pro-details {
+    margin: 0;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    letter-spacing: 0.3px;
+
+    color: #818181;
+}
+
+
+.mid {
+    width: 100%;
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 5px;
+}
+
+
+.size {
+    width: 50%;
+    padding: 5px 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color:
+        rgba(128, 128, 128, 0.15);
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition:0.45s ease;    
+}
+
+
+.size:hover {
+    background-color: #d3d3d3;
+    transform: translateY(-2px);
+    box-shadow:
+        0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.size:hover .sizeacre {
+    color: #0078db;
+}
+
+
+.price-box {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color:
+        rgba(128, 128, 128, 0.15);
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: 0.45s ease;
+}
+
+
+.price-box:hover {
+    background-color: #d3d3d3;
+    transform: translateY(-2px);
+    box-shadow:
+        0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.price-box:hover .price {
+    color: #0078db;
+}
+
+
+.head,
+.head1 {
+    margin: 0;
+
+    color: #9b9b9b;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    text-align: center;
+}
+
+
+.sizeacre {
+    margin: 8px 0 0;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #434343;
+    transition: 0.5s;
+}
+
+
+.insection {
+    margin-top: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+}
+
+.price-img {
+    width: 11px;
+    height: 11px;
+
+    display: block;
+}
+
+.price {
+    margin: 0;
+    color: #434343;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.50s;
+}
+
+
+
+.price p {
+    margin: 0;
+}
+
+.bt1 {
+    width: 100%;
+
+    margin-top: auto;
+}
+
+.explore-btn {
+    width: 100%;
+
+    padding: 6px;
+
+    margin-top: 5px;
+
+    background-color: #ffffff;
+
+    color: #222;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.explore-btn:hover {
+    background-color: #0078db;
+
+    color: white;
+
+    border-color: #0078db;
+
+    transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+
+    .project-img {
+        height: 180px;
+    }
+
+
+    .project-details {
+        padding: 15px;
+    }
+
+
+    .project-title {
+        font-size: 20px;
+    }
+
+
+    .sizeacre,
+    .price {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .project-img {
+        height: 220px;
+    }
+
+
+    .project-details {
+        padding: 16px;
+    }
+
+
+    .project-title {
+        font-size: 20px;
+    }
+
+
+    .pro-details {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .project-card {
+        border-radius: 18px;
+    }
+
+
+    .project-img {
+        height: 200px;
+    }
+
+
+    .project-details {
+        padding: 15px;
+    }
+
+
+    .project-title {
+        font-size: 17px;
+    }
+
+    .pro-details {
+        font-size: 10px;
+    }
+
+    .mid {
+        gap: 8px;
+    }
+
+
+    .size,
+    .price-box {
+        padding: 5px 5px;
+    }
+
+
+    .head,
+    .head1 {
+        font-size: 10px;
+    }
+
+
+    .sizeacre,
+    .price {
+        font-size: 10px;
+    }
+
+    .sizeacre,
+    .price p {
+        margin-top: 0px !important;
+    }
+
+
+    .explore-btn {
+        padding: 10px;
+
+        font-size: 13px;
+    }
+
+}
